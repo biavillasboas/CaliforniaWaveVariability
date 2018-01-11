@@ -1,0 +1,69 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\title{
+Manuscript: ``Characterization of the Deep-Water Surface Wave Variability 
+in the California Current Region'' 
+\\ (2017JC013280) \\ \vspace{.5cm}Response to the Reviewer's \#2 Comments}
+
+\author{Ana. B. Villas B\^oas, Sarah. T. Gille, Matthew R. Mazloff, and  Bruce D. Cornuelle}
+
+\begin{document}
+
+\maketitle
+
+{\color{blue}
+We thank Reviewer \#2 for his/her review and suggestions. Below we address the comments from reviewer \#2 point by point.
+}
+
+\begin{enumerate}
+\item
+This manuscript quantifies the surface wave climatology of the California current region, with intended application to the upcoming SWOT mission. The paper is well organized and clearly written. Although the results are largely empirical (as opposed to revealing new dynamics), the work is appropriate for JGR Oceans. The wave age and partitioning analysis are particularly valuable contributions. The manuscript is nearly ready for publication. I have a few moderate comments:"
+
+\begin{enumerate}
+\item
+The use of daily averages (as stated lines 148-149), which will obscure many important variations in sea state. This will miss the maxima of wave heights, especially those associated with synoptic wind forcing passing through. This should either be changed to the hourly reporting of the buoys, or at least some sensitivity on the implications of daily averages should be shown (perhaps as a case study).
+\\\\
+\textcolor{blue}{Thank you for this comment. In fact, there is a mistake in the description of the methodology. Daily averages of CDIP buoy and WW3 measurements are only used for comparison against altimetry in the supporting information scatter plots. For all the other cases, we have computed monthly averages using the original time series resolution (3 hours for WW3 and 30 min for CDIP buoys). We have corrected the discussion of the methodology. Note that for the linear variables, daily-averaging before taking the monthly average leads to the same results as taking the monthly averages of the original time series. The assessment of how individual storms might impact the wave field in the CCS region is left for future studies.}
+\\
+\item
+The three figures as supporting information, without any text, are a bit strange. These could probably be included in the manuscript, at least as an appendix."
+\\\\
+{\color{blue} The authors have discussed this suggestion carefully. We feel that the information presented in the supplementary material will be of value to some readers but is more information than most readers will need, and so it is appropriate to retain it as supplementary material.\textbf{ Following the suggestion of the reviewer, we have included additional text to the supplementary material to go along with the figures.}}
+\\
+\item Figure 12 is probably not necessary. There are hundreds of papers using wave slope or sea surface slope as a diagnostic metric. The definition in Eq. 7 follows convention and does not need extra explanation. On this note, it might be worthwhile to use the spectral "mean square slope" which has been shown to better correlate with wind forcing and whitecap coverage, compared with bulk wave slope, in Schwendeman \& Thomson, JGR, 2015. 
+\\\\
+{\color{blue} Regarding the first point, the authors believe that Figure 12 has pedagogical purposes and that it would be valuable to reach out to a broader audience outside the surface wave community. Therefore, we have opted for keeping Figure 12 on the manuscript. \\\\
+We agree with the reviewer that the variance of the surface slope, or the mean square slope (mss), would be more appropriate to show the modulation of the wave field by the local winds since it gives more weight to the higher part of the spectrum. Our goal in showing the bulk wave slope is to discuss potential implications to the retrieval of sea surface height from SWOT, which among other things, will be impacted by the relative angle between the long waves and the radar pulse due to the effect of layover. 
+We have computed the average mss (Figure R1), and have found
+the correlation between the monthly bulk wave slope (Figure 13 on the manuscript) and
+the monthly mean square slope to vary between 0.79 and 0.93. This is now mentioned in the revised manuscript. 
+We have chosen to show only the bulk wave
+slope as we believe its implications with regards to the layover effect make it a better choice to support the discussion of potential implications for satellite
+altimetry (Lines 466 to 491).}
+\begin{figure}[h!]
+\label{mss}
+\centering
+\includegraphics[width=\textwidth]{mean_square_slope.png}
+\caption{Monthly average mean square slope (mss) from the WW3 hindcast.}
+\end{figure}
+\item A key missing reference on spectral partitioning for climatology studies is Portilla et al, GRL 2016
+\\\\
+{\color{blue} Thank you very much for this reference. The authors were not aware of this study by the time this manuscript was submitted. We have properly referenced \cite{portilla2016climate} in the revised manuscript.}
+\\
+\item Swell dissipation is a lively topic right now. Should at least reference Ardhuin et al, JPO, 2010.
+\\\\
+{\color{blue} Thank you for the suggestion. We have added both \cite{ardhuin2009observation} and 
+\cite{ardhuin2010semiempirical} to the references.}
+\end{enumerate}
+\end{enumerate}
+\clearpage
+\bibliographystyle{chicago}
+\bibliography{Reviewer2}
+
+\end{document}

@@ -1,0 +1,598 @@
+%b% 2/18/2016
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% AGUJournalSample.tex: this sample file is for articles formatted with LaTeX
+%
+% This sample file includes commands and instructions
+% given in the order necessary to produce a final output that will
+% satisfy AGU requirements.
+%
+% PLEASE DO NOT USE YOUR OWN MACROS
+% DO NOT USE \newcommand, \renewcommand, or \def.
+%
+% FOR FIGURES, DO NOT USE \psfrag or \subfigure.
+% DO NOT USE \psfrag or \subfigure commands.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Step 1: Set the \documentclass
+%
+% There are two options for article format:
+%
+% 1) PLEASE USE THE DRAFT OPTION TO SUBMIT YOUR PAPERS.
+% The draft option produces double spaced output.
+% 
+% 2) numberline will give you line numbers.
+
+% Tip:
+%  To add line numbers to lines in equations:
+%  \begin{linenomath*}
+%  \begin{equation}
+%  \end{equation}
+%  \end{linenomath*}
+
+%% To submit your paper:
+%\documentclass[draft]{agujournal}
+\documentclass[linenumbers,draft]{agujournal}
+\usepackage{url}
+
+% Now, type in the journal name: \journalname{<Journal Name>}
+% ie,
+\journalname{JGR-Oceans}
+
+%% Choose from this list of Journals:
+%
+% JGR-Atmospheres
+% JGR-Biogeosciences
+% JGR-Earth Surface
+% JGR-Oceans
+% JGR-Planets
+% JGR-Solid Earth
+% JGR-Space Physics
+% Global Biochemical Cycles
+% Geophysical Research Letters
+% Paleoceanography
+% Radio Science
+% Reviews of Geophysics
+% Tectonics
+% Space Weather
+% Water Resource Research
+% Geochemistry, Geophysics, Geosystems
+% Journal of Advances in Modeling Earth Systems (JAMES)
+% Earth's Future
+% Earth and Space Science
+
+
+%% ------------------------------------------------------------------------ %%
+%
+%  ENTER Title Page commands:
+%
+%% ------------------------------------------------------------------------ %%
+
+% (A title should be specific, informative, and brief. Use
+% abbreviations only if they are defined in the abstract. Titles that
+% start with general terms then specific results are optimized in
+% searches)
+
+% Example: \title{This is a test title}
+
+% (List authors by first name or initial followed by last name and
+% separated by commas. Use \affil{} to number affiliations, and
+% \thanks{} for author notes.  
+% Additional author notes should be indicated with \thanks{} (for
+% example, for current addresses). 
+
+% Example: \authors{A. B. Author\affil{1}\thanks{Current address, Antartica}, B. C. Author\affil{2,3}, and D. E.
+% Author\affil{3,4}\thanks{Also funded by Monsanto.}}
+
+
+% (include name and email addresses of the corresponding author.  More
+% than one corresponding author is allowed in this LaTeX file and for
+% publication; but only one corresponding author is allowed in our
+% editorial system.)  
+
+%% Corresponding Author:
+% Corresponding author mailing address and e-mail address:
+
+% Example: \correspondingauthor{First and Last Name}{email@address.edu}
+
+% Authors are individuals who have significantly contributed to the
+% research and preparation of the article. Group authors are allowed, if
+% each author in the group is separately identified in an appendix.)
+
+% \affiliation{1}{First Affiliation}
+% \affiliation{2}{Second Affiliation}
+% \affiliation{3}{Third Affiliation}
+% \affiliation{4}{Fourth Affiliation}
+
+%% Keypoints, final entry on title page.
+% Example: 
+% \begin{keypoints}
+% \item	List up to three key points (at least one is required)
+% \item	Key Points summarize the main points and conclusions of the article
+% \item	Each must be 100 characters or less with no special
+% characters or punctuation 
+% \end{keypoints}
+
+%% \begin{abstract} begins second page 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Track Changes:
+% To add words, \added{<word added>}
+% To delete words, \deleted{<word deleted>}
+% To replace words, \replace{<word to be replaced>}{<replacement word>}
+% To explain why change was made: \explain{<explanation>}
+
+% At the end of the document, use \listofchanges, which will list the
+% changes and the page and line number where the change was made.
+
+% When final version, \listofchanges will not produce anything,
+% \added{} word will be printed, \deleted{} will take away the word,
+% \replaced{}{} will print only the 2nd argument.
+% \explain will not print anything.
+
+% Optional argument:
+% You can also add additional information to be printed with the list
+% of changes, to indicate the initials of the person changing the text,
+% and the time and/or date of the change, or any other comment by using
+% the optional [] argument:
+% \added[AH, 3:30pm, Feb 18, 2016]{added term}
+% will yield 
+% [AH, 3:30pm, Feb 18, 2016] added term on page...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%% ------------------------------------------------------------------------ %%
+%
+%  TITLE
+%
+%% ------------------------------------------------------------------------ %%
+
+\title{Characterization of the Deep--Water Surface Wave Variability in the California Current Region.}
+
+%% ------------------------------------------------------------------------ %%
+%
+%  AUTHORS AND AFFILIATIONS
+%
+%% ------------------------------------------------------------------------ %%
+
+\authors{Ana B. Villas B\^{o}as\affil{1},
+Sarah T. Gille\affil{1},
+Matthew R. Mazloff\affil{1},
+and
+Bruce D. Cornuelle\affil{1}}
+
+\affiliation{1}{Scripps Institution of Oceanography, University of California San Diego, La Jolla, CA, USA.}
+
+
+%% Corresponding Author
+%(include name and email addresses of the corresponding author.  More
+%than one corresponding author is allowed in this Word file and for
+%publication; but only one corresponding author is allowed in our
+%editorial system.)  
+
+\correspondingauthor{Ana B. Villas B\^{o}as}{avillasboas@ucsd.edu}
+
+%  List up to three key points (at least one is required)
+%  Key Points summarize the main points and conclusions of the article
+%  Each must be 100 characters or less with no special characters or punctuation 
+
+\begin{keypoints}
+\item During spring/summer the sea state off the California coast is dominated by short-period, locally generated waves up to 50\% of the time   
+\item These locally-generated waves are forced by regional-scale strong wind events that occur between April and July along the California Coast
+\item The significant wave height at the potential SWOT calval site is above the threshold specified for the SWOT error budget over 60\% of the time
+\end{keypoints}
+
+%% ------------------------------------------------------------------------ %%
+%
+%  ABSTRACT
+%
+%% ------------------------------------------------------------------------ %%
+
+
+\begin{abstract}
+Surface waves are crucial for the dynamics of the upper ocean not only because they mediate exchanges of momentum, heat, energy, and gases between the ocean and the atmosphere, but also because they determine the sea state. 
+The surface wave field in a given region is set by the combination of local and remote forcing. The present work characterizes the seasonal variability of the deep--water surface wave field in the California Current region, as retrieved from over two decades of satellite altimetry data combined with wave buoys and wave model hindcast (WaveWatch III). In particular, the extent to which the local wind modulates the variability of the significant wave height, peak period, and peak direction is assessed. During spring/summer, regional--scale wind events of up to 10 m/s are the dominant forcing for waves off the California coast, leading to relatively short period waves (8-10 s) that come predominantly from the north--northwest. 
+The wave climatology throughout the California Current region shows average significant wave heights exceeding 2 m during most of the year, which may have implications for the planning and retrieval methods of the Surface Water and Ocean Topography (SWOT) satellite mission.
+
+\end{abstract}
+
+%% ------------------------------------------------------------------------ %%
+%
+%  TEXT
+%
+%% ------------------------------------------------------------------------ %%
+
+\section{Introduction}
+Surface gravity waves are a primary source of turbulence in the upper ocean, playing a major role in the exchange of momentum, heat, energy, and gasses between the ocean and the atmosphere \citep{sullivan2004oceanic, cavaleri2012wind}. These waves are the route for over 90\% of the energy transferred from the wind to the ocean \citep{sverdrup1947wind,ferrari2008ocean}, and wave breaking is believed to be the main mechanism forcing the ocean's wind-driven circulation \citep{donelan1998air, sullivan2004oceanic}. The evolution of the surface wave spectrum during the onset of a storm is set by the input of energy from the wind, the energy loss due to wave breaking, and the transfer of energy between different frequency bands via nonlinear wave-wave interactions \citep{phillips1980}. Strong winds blowing over long fetches originate long-period waves, known as swell, that can propagate great distances away from their source \citep{snodgrass1966propagation}; hence, the surface wave field in a given region results from the combined response to both local and remote forcing. 
+
+The surface wave variability in the California Current region is largely
+affected by broad-scale atmospheric patterns, such as the El Ni\~{n}o Southern Oscillation (ENSO), the Pacific Decadal Oscillation (PDO), and the Pacific North American pattern (PNA) \citep{bromirski2005wave, bromirski2013wave, adams2008southern}. 
+For instance, higher wave heights \citep{adams2008southern} and wave power \citep{bromirski2013wave} in the northeastern Pacific are associated with the warm phase of the PDO. These effects are enhanced during El Ni\~{n}o years, which leads to higher risk of coastal flooding and beach erosion. 
+Although many efforts have been made to characterize long-term trends and the interannual to decadal variability of the wave climate in the northeastern Pacific \citep[e.g.,][]{seymour1984elnino,seymour1996wave,bromirski2005wave}, the role of regional-scale forcing in modulating the wave field in this region remains unclear. 
+
+Alongshore winds off the California coast are established during late spring/early summer by the 
+pressure gradient between a thermal low over the western United States and the North Pacific high \citep{zemba1987marine, koravcin2004coastal}. 
+At this time of the year, these upwelling-favorable winds lead to a low-level inversion that caps the marine atmospheric boundary layer (MABL) at heights lower than the coastal topography, such that the atmospheric flow is channeled. As these alongshore winds approach a cape, regions of compression (deceleration) are expected to develop upwind of the cape, followed by regions of expansion (acceleration) downwind of it \citep{winant1988marine,koravcin2001marine,taylor2008northerly}. 
+A series of capes along the California coast together with the regional-scale coastline configuration allows a succession of such ``expansion fan'' winds to occur, leading to high wind speeds in May/June \citep{koravcin2001marine, koravcin2004coastal}. While swells originated in the Southern Ocean are known to be an important source of wave variability in the California region during summer, their energy gets dissipated along the way \citep{ardhuin2010semiempirical, ardhuin2009observation} leading to small significant wave height ($H_s$, the average height of the highest one-third of the waves). Thus, high winds linked to expansion fans may play a major role as a local forcing for the wave field. 
+
+Even though the horizontal scales of surface waves are much smaller than the 10--km footprint of present satellite altimeters, they can produce a sea state bias (SSB) in the altimeter measurements and may impact the retrieval of the sea surface height (SSH) \citep{fu1991effect, peral2015impact}. The SSB is generally decomposed into instrumental error and electromagnetic (EM) bias, both associated with the fact that the distribution of wave heights in the ocean is not exactly Gaussian \citep{fu1991effect, melville1991measurements}. While the instrumental error is attributed to the design of the altimeter itself, the EM bias is intrinsic to the way that the radar pulse interacts with the sea surface. As a result, the accuracy of SSH measurements from altimetry is directly limited by the effect of surface waves.
+Theoretical models of the EM bias predict a linear relationship between the EM bias and $H_s$; however, other characteristics of the sea state, such as the degree of wave development (wave age), the wind speed, and the direction of the waves with respect to the satellite boresight, contribute to the EM bias. Thus, as satellite altimeters evolve towards resolving finer scales, precise knowledge of the wave field is key to understanding how surface waves may contribute to the error budget of SSH measurements, and this information is relevant for the planning of future missions such as the Surface Water and Ocean Topography (SWOT) satellite.
+
+Most earlier studies on surface wave variability in the California Current region have relied either on point measurements from wave buoys \citep[e.g.,][]{seymour1996wave, bromirski2005wave}, which lack spatial coverage, or output from wave models \citep[e.g.,][]{wang2001changes, adams2008southern, bromirski2013wave}, which is subject to the model physics representativeness. Remote sensing satellites provide a complementary tool to infer the spatial structure of the wave field, and they provide a robust way to gain information on the $H_s$ climatology.  
+In the present work, we characterize the regional-scale intra-annual variability and the main driving mechanisms of the surface wave field in the California Current region by combining measurements retrieved from over two decades of satellite altimeter data with wave buoys, and a wave model hindcast. In particular, we assess the seasonal variability of significant wave height, period, and direction at several locations off the California coast, including one of the potential sites for the calibration and validation of SWOT. We focus on offshore deep-water waves; investigation of processes happening close to the coast is left for future studies. 
+
+ection{Data and Methods}
+
+\subsection{Multimission Along-track Altimeter Data}
+
+Altimeters are active instruments that estimate the distance to a given target by measuring the two-way time of a microwave radar pulse. 
+Assuming that the distribution of sea surface heights within the temporal and spatial scales of such a pulse is mostly due to surface gravity waves and that the distribution of wave heights in the ocean is approximately Gaussian \citep{pierson1955wind,longuet1963effect}, $H_s$ can be estimated from the average waveform of the return pulse \citep{brown1977average}. 
+
+
+Since 1992, several satellite altimeters have made it possible to observe $H_s$ at global scales \citep{young2011global}, yet the lack of homogeneity between measurements from different missions poses a challenge in obtaining reliable long-term $H_s$ time series \citep{queffeulou2004long,zieger2009joint}. 
+Discrepancies between missions arise from differences in the type of sensors as well as electronics drift, which can potentially introduce biases compromising the quality of the data. 
+To address this issue, \citet{queffeulou2004long} used cross-comparison of altimeter and buoy data to produce a homogeneously validated and calibrated dataset consisting of over twenty years (1992--2016) of along-track $H_s$ measurements from nine different altimetry missions.
+This product is distributed by The French Research Institute for Exploitation of the Sea (IFREMER) 
+and is publicly available for download.
+The analyses of satellite-based $H_s$ in the present work were performed after daily averaging the along-track measurements into regular $1^\circ\times 1^\circ$ bins. 
+To minimize the effects of land contamination and inaccurate tidal corrections \citep{bouffard2008exploiting}, only measurements in regions deeper than 100 m and at least 20 km away from the coast were considered.
+
+\subsection{Buoy Measurements}\label{buoy_methods}
+
+Even though satellites are a useful source of wave height observations, they fail to provide 
+frequency and directional information, which is essential to fully understand the variability of the surface wave field. To complement our analysis, we selected wave buoys from the Coastal Data Information Program (CDIP; http://cdip.ucsd.edu/) at water depths greater than 100 m along the California coast (Table \ref{stations}). We have opted to use CDIP buoys exclusively, because they operate with Datawell Directional Waverider buoys, which are known to have better directional measurements in comparison to the 3-meter discus buoys from the National Data Buoy Center \citep{o1996comparison}. 
+From the buoys that meet the depth requirement, we analyze only those with at least five years of data, and we select them to be separated by at least $0.5^\circ$ in latitude and longitude. When multiple buoys are located within a $0.5^\circ$ radius, we retain the one farthest offshore and with the longest record.
+
+
+CDIP buoys provide historic quality-controlled timeseries of integral wave parameters such as significant wave height ($H_s$), peak frequency ($f_p$), and peak direction ($D_p$), as well as the first four angular moments ($a_1$, $b_1$, $a_2$, and $b_2$), which can be used to estimate the surface wave directional spectrum \citep{longuet1963observations, long1980statistical}. The peak frequency is defined as the frequency at which the wave energy spectrum reaches its maximum, and the peak direction is the wave direction at the peak frequency.
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{../figs/pdf/study_area.pdf}
+\caption{Location of the CDIP buoys (white), potential calibration and validation site for SWOT (red diamond), and calibration and validation orbit nadir ground track of SWOT (dashed gray). All the wave buoys are at depths greater than 100 m. The color map shows the local bathymetry in meters.}
+\label{study_area}
+\end{figure}
+
+
+\begin{table}
+\caption{Station ID, station name, position, depth, and time span of the selected CDIP wave buoys along the California coast as well as the calibration and validation site for SWOT (as shown in Figure \ref{study_area}).}
+\centering
+\begin{tabular}{c c c c c c}
+\hline
+Station ID  & Station Name & latitude & longitude & depth [m] & time span\\
+\hline
+\hline
+calval & calval &35.4 N & 125.4 W &  4561 & 1992--2016\\
+168 & Humboldt Bay &40.896 N & 124.357 W &  120 & 2010--2017\\
+094 & Cape Mendocino &40.294 N & 124.731 W &  333 & 2004--2017\\
+029 & Pt. Reyes &37.948 N & 123.467 W &  550 & 1997--2017\\
+157 & Pt. Sur & 36.341 N &  122.101 W &  366 & 2009--2017\\
+071 & Harvest &34.454 N & 120.783 W &  548 & 1998--2017\\
+167 & S. Nicolas Isl. &33.499 N & 119.489 W &  1571 & 2008--2013\\
+191 &  Pt. Loma South & 32.529 N & 117.421 W &  1143 & 2008--2017\\
+\hline
+\end{tabular}
+\label{stations}
+\end{table}
+
+The directional spectrum of the surface wave field $E(f,\theta)$ represents the density of the sea surface variance at each frequency ($f$) and direction ($\theta$). The integral of $E(f,\theta)$, i.e. the total variance of the surface elevation, is related to the significant wave height by: 
+
+\begin{equation}
+H_s = 4 \left(\int_{-\infty}^{\infty} \int_{0}^{2\pi} E(f,\theta)df d\theta\right)^{1/2}.
+\end{equation}
+
+\noindent Thus, if one is interested in describing the significant wave height associated with a particular frequency and direction band, one may split the directional spectrum into $N$ partitions such that:
+ 
+\begin{equation}
+H_{s_i} = 4 \left(\int_{{f_1}_i}^{{f_2}_i} \int_{{\theta_1}_i}^{{\theta_2}_i} E(f,\theta)df d\theta\right)^{1/2},\label{part_hs}
+\end{equation}
+
+\noindent with
+
+\begin{equation}
+H_s = \left(\sum_{i=1}^N {H_s}^2_i \right)^{1/2}.
+\end{equation}
+
+\noindent In Section \ref{dirspec}, we use the maximum entropy method (MEM) \citep{lygre1986maximum} to compute the directional spectra from the angular moments measured by the selected buoys, and investigate the $H_s$ variability of multiple partitions as in equation (\ref{part_hs}). 
+
+\subsection{Wave Model Hindcast}
+
+Assessments of wave models show reasonable agreement with observations \citep{bidlot2002intercomparison,cox2001global}, which makes such models useful tools to bridge the gap between the sparseness of point measurements from wave buoy and the satellite limitation of measuring only $H_s$.  
+In this study, we complement our analysis with a global wave parameter database \citep{rascle2013global} developed using one of the state-of-the-art spectral wave models, WaveWatch III (WW3) \citep{tolman2009user}, forced by NCEP Climate Forecast System Reanalysis Reforecast (CFSR) winds. 
+The simulations for this database span from 1994 to 2012 and were carried out at $0.5^\circ$ spatial resolution, using a spectral grid with 32 frequencies and 24 directions and saving outputs every 3 hours. Grid points at water depth shallower than 100 m or within 20 km of the coastline were not considered in our analysis. We refer the reader to \cite{rascle2013global} for further details on the model set-up and validation.
+
+\section{Results and Discussion}
+
+\subsection{Significant Wave Height Variability}\label{hsvar}
+
+For the sake of consistency, the analysis of satellite--based $H_s$ presented hereinafter was performed over the same time span as the wave model hindcast (1994--2012); however, there are no significant changes in the results when using the entire altimetry database (1992--2016, not shown). 
+Monthly maps of $H_s$ in the California Current region from altimeter measurements reveal a clear seasonal cycle with higher waves occurring during the boreal winter (Figure \ref{monthly_swh}). 
+Average $H_s$ varies between a maximum of 4.5 m in January, in the offshore region north of $40^\circ$N, and a minimum of 1.1 m in August in the entire domain. 
+Additionally, except for August, the average $H_s$ at the SWOT calval site is greater or equal to 2 m, the threshold specified for the projected SWOT performance \citep{peral2015impact}. 
+From late fall to early spring there is a nearly zonal demarcation in $H_s$ with higher waves in the northern portion of the domain decreasing southward, a hallmark of winter cyclone/anticyclone systems that propagate from the northwestern Pacific into the Aleutian Low region, as suggested by earlier studies \citep[e.g.,][]{adams2008southern, bromirski2005wave, bromirski2013wave}. 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{../figs/pdf/case_monthly_maps_1994_2012.pdf}
+\caption{Monthly average maps of significant wave height off the California coast from altimeter measurements between August 1994 and August 2012 (colors and contours). The dash lines show the nadir ground track of SWOT's calibration and validation orbit and the red diamond, one of the potential calibration and validation sites for SWOT.}
+\label{monthly_swh}
+\end{figure}
+\noindent Monthly averages of $H_s$ from the WW3 hindcast result in the same overall variability, with wave heights from WW3 having a small bias ($\sim \pm$10 cm) relative to both altimetry and buoy data (Supporting information Figure S1 and S2). 
+An interesting feature of Figure \ref{monthly_swh} is a rather localized region of $H_s \geq 2$ m near the coast from May to July. This feature starts to develop in April as a narrow band of $H_s=2.5$ m, becoming broader and weaker ($H_s = 2$ m) in May, and very localized around central/northern California through June and July, extending $\sim 500$ km offshore (closed oval contour of $H_s = 2$ m).
+
+
+Figure \ref{seasonal} shows monthly averages of $H_s$ (curves) and $D_p$ (vectors) at the SWOT calval site (Figure \ref{seasonal}a), and at the selected CDIP buoy sites (Figure \ref{seasonal}b--h). Because we have no wave buoy at the SWOT calval site, we show $H_s$ from altimeter observations at the nearest neighbor (light red), together with average $H_s$ (dark red) and $D_p$ from the WW3 hindcast (Figure \ref{seasonal}a). Hereinafter the wave direction will follow the meteorological convention, such that $0^\circ$ means that waves are coming from the north, 90$^\circ$ waves are coming from the east, and so on. 
+For each location, the standard error of the mean $H_s$ (shade) changes from month to month depending on the number of months considered in the average, as well as variations of the standard deviation. For example, buoy 167 (Figure \ref{seasonal}f) has a much larger standard error due to its relatively short record.
+
+As in Figure \ref{monthly_swh}, the overall seasonal variability of $H_s$ is marked by an annual cycle that peaks during boreal winter, with $H_s$ of up to 3.1 m at the northernmost buoy sites. At buoys 167 and 191, however, the maximum average is observed in April. The absolute minimum $H_s$ for all sites occurs in August, and the annual mean (dashed horizontal line) is greater than 2 m, except at buoys 167 and 191.
+Even though a winter--to--summer decrease in $H_s$ is expected, the fact that the seasonal variability 
+deviates considerably from a sinusoidal cycle is somewhat surprising.
+
+Instead of decreasing monotonically throughout the spring and summer, there is either a local maximum or a plateau in $H_s$ that can be observed along central/northern California in May--July (e.g. Figure \ref{seasonal}d). This feature is apparent in monthly averages from all three data sets (altimetry, buoy, and wave model) for latitudes north of 33$^\circ$ N and south of 42$^\circ$ N (Supporting information Figure S3). 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{../figs/pdf/cdip_dir_seasonal_subplots_mean.pdf}
+\caption{Monthly averages of significant wave height ($H_s$) from altimeter data at the SWOT calval site (red) and from the selected CDIP buoys (black), along with the respective averaged peak direction ($D_p$, black arrows). For the SWOT calval site, we computed the average $D_p$ from the WW3 hindcast. In that case $H_s$ from WW3 is also shown as a reference (panel a, dark red).  
+The standard error of the mean is shown as a shade, and the annual mean for each curve is plotted as a dashed horizontal line. The station ID is indicated on the top right of each plot and the plots are organized from the northernmost buoy (168, panel b) to the southernmost (191, panel h). Note the different vertical axis from panel to panel.}
+\label{seasonal}
+\end{figure}
+Average $D_p$ is predominantly from the WNW to NW year-round at the SWOT calval site and at buoys 168, 094, and 029 (Figure \ref{seasonal}a--c). In late spring and summer, at buoys 157 and 071 (Figure \ref{seasonal}d--e), peak direction shifts to waves coming from the W, while south of Point Conception (buoys 167 and 191) spring and summer waves come predominantly from the SW to WSW. 
+
+\subsection{Peak Direction and Peak Period}\label{dirvar}
+One might hypothesize that the plateauing of $H_s$ in May--July is due to an increase in south swell generated by winter storms in the Southern Ocean that propagate all the way to the California coast \citep{snodgrass1966propagation}.
+To investigate this hypothesis, we take as an example CDIP buoy 029, which has a relatively long record and is within the $ H_s = 2$ m contour in Figure \ref{monthly_swh} (June).
+
+Figure \ref{joint} shows joint histograms of $H_s$, peak period ($T_p = 1/f_p$), and $D_p$ from CDIP buoy 029 for measurements in December--February (top) and May--July (bottom). During boreal winter (top), the distributions are predominantly unimodal with most waves coming from the W to NW (270$^\circ \leq D_p \geq 315^\circ$), with significant wave heights between 2 m and 4 m, and peak period between 12 s and 15 s. In late spring and early summer the picture is rather different: Even though remotely generated south swell (180$^\circ \leq D_p \geq 215^\circ$) is relatively frequent in May--July (bottom left of Figure \ref{joint}d), the majority of the waves with $H_s \geq$ 2 m come from the NW (315$^\circ \leq D_p \geq 330^\circ$). From Figure \ref{joint}f, we also note that these waves from the NW have a rather short period ($T_p$ $\leq$ 10 s), which suggests that they are locally generated wind waves. In contrast, the distribution of longer-period waves ($T_p$ $>$ 12 s), is concentrated around directions between 180$^\circ$ and $215^\circ$, characteristic of south swell. 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{../figs/pdf/joint_hex_029.jpg}
+\caption{Joint histograms from CDIP buoy 029 for measurements during December--February (top) and May--July (bottom) of peak direction ($D_p$) and significant wave height ($H_s$) (blue, panels a and d), peak period ($T_p$) and significant wave height (red, panel b and e), and peak direction and peak period  (black, panels c and f). The colorbar shows the number of points scaled by $10^3$. }
+\label{joint}
+\end{figure}
+The results shown in Figure \ref{joint} for buoy 029 reinforces the idea that waves off central and northern California come predominantly from the W to NW during boreal winter and from the WNW to NW during May--July. 
+
+To assess the spatial variability of wave direction and period throughout the year, we computed monthly average maps of $D_p$ and $T_p$ from the WW3 hindcast (Figure \ref{direction} and \ref{period}). Figure \ref{direction} shows that from October to April, waves come, on average, from directions between the W (270$^\circ$) and N (360$^\circ$) in the entire domain (consistent with Figure \ref{joint}a,c).
+In May, waves from the S to SW start to dominate at longitudes west of 125$^\circ$W and latitudes south of 35$^\circ$S, becoming more from the SE to S in late summer. Even though we would expect a dominance of waves with a south component from late spring to summer, we observe that east of 125$^\circ$W the average $D_p$ remains from the WNW to NW from May to September, which could also be seen in Figure\ref{joint}d. This somewhat isolated region of waves from the NW (blue/purple region embedded into yellow/orange) is particularly evident in June--August, when storms in the Southern Hemisphere are more frequent. Note also that the region of waves from the NW overlaps with the region having $H_s \geq 2$ m in May--July in Figure \ref{monthly_swh}. As expected from Figure \ref{seasonal}f--g, the average $D_p$ maps show that in a small region onshore and south of Point Conception the mean wave direction is from the SW in spring/summer. 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{../figs/pdf/dp_monthly3_mean_maps.pdf}
+\caption{Monthly average maps of peak direction ($D_p$) off the California coast from the WaveWatch III hindcast (colors and vectors). The direction follows the meteorological convention, such that zero degrees means waves coming from the North and 90 degrees, waves coming from the East.}
+\label{direction}
+\end{figure}
+
+Monthly maps of peak period ($T_P$) are shown in Figure \ref{period}. From late fall to early spring the average $T_p$ is dominated by intermediate to long-period waves ($T_p\geq12$ s). Because during this time most waves are associated with storms propagating from the Gulf of Alaska, the average $T_p$ is slightly lower in the northern portion of the domain and increases with distance from the source region. A spatial pattern similar to the one observed in the $H_s$ and $D_p$ averages for June is also apparent in the $T_p$ map for that month. Despite the evidence of long-period south swell south of Point Conception in late spring/summer, a well-defined region of $T_p\leq10$ s characterizes the maps of average peak period between 33$^\circ$N--42$^\circ$N.
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{../figs/pdf/tp_monthly_maps_mean.pdf}
+\caption{Monthly average maps of peak period ($T_p = 1/f_p$) off the California coast from the WaveWatch III hindcast.}
+\label{period}
+\end{figure}
+
+\subsection{Variability of the Wind Forcing}\label{windvar}
+The surface wave field in a given region is set by the combination of local and remote forcing. 
+To investigate the importance of the regional-scale wind field to the surface wave variability off the California coast we analyzed monthly averages of reanalysis 10 m winds ($\vec{U}_{10}$) from CFSR between 1994 and 2012, the same wind product used to force the WW3 hindcast. Monthly maps of wind speed ($U_{10} = \sqrt{u_{10}^2 + v_{10}^2}$) and direction are shown in Figure \ref{wind_maps}. 
+
+
+During boreal winter the wind field in the eastern Pacific is mostly influenced by two major pressure systems: the Aleutian low (centered at about 50$^\circ$N, between the date line and $170^\circ$W) and the North Pacific high (centered around $30^\circ$N and 135$^\circ$W) \citep{schroeder2013north,rodionov2005aleutian}. These pressure systems drive stronger (7--8 m/s) southwesterly winds off the California coast north of 40$^\circ$N and weaker (4--6 m/s) northwesterly winds south of 40$^\circ$N (Figure \ref{wind_maps}, November--March).
+In spring/summer, the northward migration of the North Pacific high together with the development of a thermal low over the southwestern US shifts the mean wind towards a more northwesterly orientation along the entire California coast (Figure \ref{wind_maps}, April--July). 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{../figs/pdf/wind_monthly_maps.pdf}
+\caption{Monthly average maps of the wind field off the California coast from the CFSR reanalysis. The wind speed is shown in the colormap and the direction as normalized vectors. Note the development of a localized high-wind speed region from late spring to late summer near the California coast associated with expansion fan winds. A California-scale expanssion fan is marked by the 7 m/s contour in June}
+\label{wind_maps}
+\end{figure}
+As expected from previous studies \citep{halliwell1987large, taylor2008northerly, schroeder2013north}, Figure \ref{wind_maps} (April--July) shows
+a clear signature of expansion fan winds, characterized by anomalously high (7--10 m/s) alongshore winds in central/northern California during spring/summer that extend $\sim 500$ km offshore between $33^\circ$N and $42^\circ$N. 
+Consistent with the simulations of \cite{koravcin2004coastal}, the wind structure in June that we observe is marked by two major cape-scale expansion fans: one off Point Arena ($\sim 38^\circ$N) and the other off Point Conception ($\sim 34^\circ$ N), together with a California-scale expansion fan (7 m/s contour in Figure \ref{wind_maps}, June). Enhanced wind speeds right off Point Conception start in April, followed by a region of persistent low wind speeds further south, where the coastline orientation changes by roughly $90^\circ$, becoming nearly east--west oriented. 
+
+%------------------------------------------
+Monthly averages of wind speed at the SWOT calval site and the selected CDIP buoys may provide further insight on the role of local and remote wind forcing. Given the lack of anemometers on the CDIP wave buoys, we compute the averages using the CFSR winds at the nearest neighbor of the calval site and wave buoy locations. CFSR winds in the northeast Pacific have been shown to have good agreement in respect to both NOAA wave buoys and satellite altimeters \citep[e.g.,][]{chawla2013validation, rascle2013global, stopa2014intercomparison}.
+
+As we can see in Figure \ref{wind_series}, the seasonal variability of the wind speed has a strong geographic dependence. At sites north of Point Conception, we observe maximum average wind speeds of 7--9 m/s in May--July (Figure \ref{wind_series}a--f), while at buoys 167 and 191 the wind speed peaks in April. This geographic pattern of stronger surface wind speed in April at regions south of Point Conception was also observed by \cite{winant1988marine}. As the North Pacific high strengthens and moves northward at the beginning of spring, winds in southern California tend to peak earlier than in central/northern California. 
+The 50\% increase in wind speed from buoy 157 to buoy 071 is a good example of a deceleration area upwind of Point Conception, followed by expansion fan winds in the immediate lee of it.
+
+Monthly averages of wind direction are shown in the bottom of each panel in Figure \ref{wind_series}. At buoys 168 and 094 winds during boreal winter are predominantly southerly. In April, winds start veering clockwise, becoming nearly alongshore (northwesterly) by late spring/summer. Wind directions between Point Reyes and Harvest (Figure \ref{wind_series}c--e) are predominantly northwesterly year-round, while south of Point Conception (Figure \ref{wind_series}f--g) the winds shift to westerly in spring/summer. This shift in wind direction south of Point Conception is associated with the abrupt change in the coastline orientation, which causes the flow to separate \citep{harms1998characteristic}. Figures \ref{wind_maps} and \ref{wind_series} show that average wind speeds off the California coast are higher in spring/summer, with wind directions being predominantly alongshore (northwesterly) in central/northern California, and onshore (westerly) in southern California. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{../figs/pdf/wind_dir_seasonal_subplots_mean.pdf}
+\caption{Monthly averages of wind speed from the CFSR reanalysis at the nearest neighbor of the SWOT calval site (red) and of the selected CDIP buoys (black). The standard error of the mean is shown as a shade, and the annual mean for each curve is plotted as a dashed horizontal line. The station ID is indicated on the top right of each plot and the plots are organized from the northernmost buoy location (168, panel b) to the southernmost (191, panel h). Note the different vertical axis among the plots. In the bottom of each panel, the monthly average wind direction is ploted as black arrows. }
+\label{wind_series}
+\end{figure}
+
+For a state of equilibrium between winds and waves, \cite{pierson1964proposed} have shown that integral spectra parameters such as $H_s$ and $f_p$ tend to asymptotic values that are a function of the wind speed only, such that:
+
+\begin{equation}
+f_p = 0.13\left(\frac{g}{U_{10}}\right),
+\label{peak_f}
+\end{equation}
+ 
+\noindent where $f_p$ is the peak frequency, $g$ is the acceleration due to gravity, and $U_{10}$ is the wind speed at 10 m. From the dispersion relationship for deep-water waves, the phase speed ($c_p$) at the peak frequency can be written as:
+
+\begin{equation}
+c_p = \frac{g}{2\pi f_p}.
+\label{phase}
+\end{equation}
+
+\noindent Thus, at full development, i.e. when the surface wave spectrum becomes stationary, equations (\ref{peak_f}) and (\ref{phase}) are usually combined to a constant \citep{alves2003revisiting}:
+
+\begin{equation}
+\frac{c_p}{U_{10}} = 1.2
+\label{age}
+\end{equation}
+ 
+The ratio between the phase speed of the waves and wind speed (equation \ref{age}) is often referred as the ``wave age'' and provides a metric for the degree of development of the wave field. For $c_p/U_{10} \leq 1.2$, the wave field is dominated by wind-sea, in these conditions, momentum is transferred from the wind to the waves, such that the wave field is highly coupled to the local winds. Conversely, sea states with $c_p/U_{10} > 1.2$ are associated with remotely generated swell that travel at speeds faster than the local wind and do not absorb as much momentum.
+ 
+Figure \ref{windsea} shows monthly averages of the fraction of days dominated by locally generated waves ($c_p/U_{10} \leq 1.2$) computed using $c_p$ and $U_{10}$ from the WW3 hindcast. We can see that swell-dominated sea states are ubiquitous year-round. The overall average fraction of wind-waves is lower than 0.05, which is consistent with the global estimates of \cite{hanley2010global}. However, Figure \ref{windsea} suggests that this fraction can be much higher at regional scales. In the region where expansion fan winds are characteristic, periods of swell-dominated sea states are interspersed with wind-sea, which leads to a fraction of locally generated waves as high as 50\% in spring/summer, reinforcing the importance of local winds to the variability of the surface wave field off the California coast.
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{../figs/pdf/young_wave_fraction_monthly_frac.pdf}
+\caption{ Monthly average of the fraction of days with $c_p/U_{10} \leq 1.2$, which is associated wind-sea dominated sea states. The monthly maps were computed using peak phase speed and wind speed from the WW3 hindcast.}
+\label{windsea}
+\end{figure}
+
+\subsection{Directional spectrum partitions}\label{dirspec}
+CDIP buoys provide frequency and directional information for the wave field. This allows the wave energy spectrum to be partitioned into specific bands of period and direction, and it permits a quantification of the $H_s$ associated with each partition (see Section \ref{buoy_methods}). 
+\cite{munk1947refraction} proposed five major ``wave types'' associated with typical meteorological conditions to characterize waves reaching La Jolla, California. Here we modify their scheme in order to encompass a greater domain and add extra partitions, which better isolates the wave types that we aim to characterize. Note the thresholds used to define the partitions are subjective, despite being based on earlier studies \citep[e.g.,][]{munk1947refraction, adams2008southern} and on the results discussed in sections \ref{hsvar}--\ref{windvar}. Similar methods of spectral partitioning have been recently implemented by \cite{portilla2016climate}.
+
+Table \ref{part_table} shows the period and direction thresholds that we used for separating the directional spectra into seven partitions. The \textit{Expansion Fans} partition comprises what we argue to be waves associated with regional-scale winds in spring/summer off the California coast. These waves have a relatively short period and are typically aligned with the wind, which spans directions from W to N. Longer period waves associated with the propagation of storm systems across the North Pacific are encompassed by the \textit{Winter Storms} partition, whereas long-period waves generated by storms in the Southern Hemisphere are referred to as \textit{S. Hemisphere}. To account for waves that could have been either locally or remotely generated we consider the \textit{Intermediate Period} partition. Short-period waves ($T < 5$ s) from all directions are grouped in the \textit{Chop} partition; waves in the same direction range as \textit{S. Hemisphere}, but with period too short to be considered swell are accounted for by the \textit{Short S. Hemisphere} partition; finally, the \textit{East} partition accounts for waves coming predominantly from the east.       
+
+\begin{table}
+\caption{Thresholds used for separating the directional spectra into seven partitions, using equation (\ref{part_hs}), as illustrated in Figure \ref{partitions}a. The timeseries for the partitions marked by a star are shown in the Supporting Information.}
+\centering
+\begin{tabular}{l c c}
+\hline
+Partition name & Period [s] & Direction [degrees]\\
+\hline
+\hline
+Expansion Fans & $10\geq T \geq 5$ & $270^\circ \leq \theta \leq 360$ \\
+Winter Storms & $T\geq 12$ & $ 240 < \theta \leq 360$ \\
+Intermediate Period & $12>T>10$ & $135 \leq \theta \leq 360$ \\
+S. Hemisphere & $T \geq 12$ & $135 < \theta \leq 240$\\
+*Chop & $T<5$ & $0 < \theta \leq 360$ \\
+*East & $T \geq 5$ & $ 135 < \theta < 360$ \\
+*Short S. Hemisphere & $12 > T \geq 5$ & $135 < \theta < 270$ \\
+\hline
+\end{tabular}
+\label{part_table}
+\end{table}
+ 
+Figure \ref{partitions} shows monthly average $H_s$ at the selected CDIP buoys associated with the four partitions that are the most relevant to our discussion, namely \textit{Expansion Fans}, \textit{Winter Storms}, \textit{Intermediate Period}, and \textit{S. Hemisphere}. Curves for all seven partitions are available in the Supporting Information Figure S4. At all buoys, the $H_s$ associated with winter cyclones/anticyclones systems in the North Pacific (\textit{Winter Storms}, green) has a well-defined annual cycle, being nearly sinusoidal, with maximum values during winter and minimum during summer. Except for buoys 167 and 191, the seasonal variability from November to March is dominated by waves from the \textit{Winter Storms} partition. 
+The overall variability of the \textit{Intermediate Period} partition (gray) is also marked by an annual cycle that peaks during boreal winter. However, the plateauing observed in Figure \ref{seasonal} is to some extent also present in the \textit{Intermediate Period} curves, which would be expected since this partition accounts for a mix between locally and remotely generated waves. From April to October, the $H_s$ associated with the \textit{Intermediate Period} partition is comparable or slightly higher than the \textit{Winter Storms}, but much lower than the \textit{Expansion Fans}. 
+
+Even during summer, the average contribution of swell from the Southern Hemisphere (\textit{S. Hemisphere}, blue) to the total $H_s$ variability is nearly irrelevant when compared with the other partitions, except at Point Loma (buoy 191, Figure \ref{partitions}h), which is geographically more exposed to waves from this direction. However, if we focus on long-period waves only ($T \geq 12$ s), \textit{S. Hemisphere} waves dominate over \textit{Winter Storms} from late spring to late summer. So, even though we do observe some south energy at long-periods along the California coast, this band is associated with small wave heights.
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{../figs/pdf/partitions_subplots.pdf}
+\caption{Monthly averages of significant wave height computed by integrating the directional spectra from CDIP buoys within different partitions, as illustrated on the top left panel. For the sake of clarity, we only show curves for the most relevant partitions, referred to as: \textit{Expansion Fans} (10 s$\geq T\geq$5 s, $270^\circ\leq\theta\leq360^\circ$, golden); \textit{Winter Storms} ($T \geq 12$ s, $240^\circ \leq \theta \leq 360^\circ$, green); \textit{Intermediate Period} (12 s$>T> $10 s, $135^\circ \leq \theta \leq 360^\circ$, gray), and \textit{S. Hemisphere} ($T\geq12$ s, $135^\circ<\theta\leq240^\circ$, blue). The station ID is indicated on the top right of each panel. Curves for all seven partition are shown in the Supporting Information (Figure S4).}
+\label{partitions}
+\end{figure}
+Waves from the \textit{Expansion Fans} partition contribute the most to the total $H_s$ between April and October, except at buoy 191, where the $H_s$ from \textit{Expansion Fans} is comparable to \textit{S. Hemisphere}. It is interesting to note the correspondence between the monthly averages of wind speed from Figure \ref{wind_series} and the respective \textit{Expansion Fans} partition. Such correspondence is the most evident at buoys in the immediate lee of the two major cape-scale expansion fans (Figure \ref{wind_maps}, June) namely, buoys 029 and 071. In the same way, the wind speed peaks up earlier in southern California (Figure \ref{wind_series} buoys 167 and 191), so does the $H_s$ from the \textit{Expansion Fans} partition. The partitioning of the directional spectra is artificial in the sense that it depends on arbitrary thresholds. Nonetheless, this approach shows that the highest wave heights in spring and summer off the California coast are associated with short-period (10 s$\geq T\geq$5 s) waves coming from the NW.
+
+\subsection{Implications for Satellite Altimetry}
+Comprehensive knowledge of the surface wave field is also relevant for the success of future altimetry missions such as SWOT\@. SWOT will map the ocean surface topography every 20 days via two parallel 50--km--wide swaths with 1--km pixel spacing, that will make it the first of its kind capable of resolving the submesoscale ocean SSH. The California Current region has been identified as one of the target regions for calibration and validation of SWOT (Figure \ref{study_area}), as pointed out in \cite{calval_white}; so, an accurate characterization of the wave field in this region could be readily used to complement the error budget analysis of \cite{peral2015impact}, and to help interpret the SSH signal measured by SWOT\@.
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{../figs/pdf/calval_percent.pdf}
+\caption{Average percentage of days per month on which the significant wave height at the SWOT calval site off the California coast (35.4$^\circ$N, 125.4$^\circ$W) is above a given threshold. The significant wave height used is from the altimeter database and spans from 1992 to 2016.}
+\label{calval}
+\end{figure}
+Figure \ref{calval} shows the average percentage of days per month on which the $H_s$ is above a given threshold at one of the potential calibration/validation (calval) sites for SWOT\@. The curves were computed based on 24 years of altimeter data, which means we have used the full time span of the altimetry dataset (1992--2016).
+Our results show that the $H_s$ at the calval site is above the 2 m threshold specified for the projected SWOT performance on average over 60\% of the time; however, this value can be as low as 25\% in August.
+\cite{peral2015impact} show that systematic sea surface height errors due to ocean surface waves are the dominant source of error on SWOT's SSH error budget for sea states with $H_s$ higher than 4 m. Given that the surface wave field in the California Current regions is highly variable, SWOT's performance may be degraded depending on the period that calibration and validation efforts take place. From Figure \ref{calval} we can see in December, for example, there is nearly 30\% chance that a given $H_s$ measurement will be above 4 m, whereas between April and September this chance drops to almost zero.
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{../figs/pdf/scheme_slope.pdf}
+\caption{Schematic representation of the characteristic wave slope for two monochromatic waves with amplitude $a$, and wavelengh $\lambda$ and $\lambda$/2, respectively. Here, the characteristic wave slope ($\alpha_{ch}$) is defined as the angle relative to the horizontal of a straight line connecting the wave crest to the wave trough.}
+\label{scheme}
+\end{figure}
+
+The performance of SWOT will also depend on the relative angle between the sea surface and SWOT's radar pulse. If the incidence angle of the radar pulse is shallower than the sea surface inclination, multiple points in the physical space may map onto the same point in the radar space, leading to an effect know as ``layover'' that distorts the measured sea surface with respect to the true sea surface (see Figure 3 of \cite{peral2015impact}).
+
+
+Figure \ref{scheme} shows a schematic representation of a proposed proxy for the sea surface inclination due to surface waves. The scheme shows two monochromatic waves that have the same amplitude ($a$, distance from the crest/trough to the mean sea surface), but different wavelengths ($\lambda$ and $\lambda$/2, respectively). We then define a \textit{characteristic wave slope} ($\alpha_{ch}$) as the angle relative to the horizontal of a straight line that connects the wave trough to the wave crest, such that for the longer wave in Figure \ref{scheme} we can write: 
+
+\begin{equation}
+\tan{(\alpha_{ch})} \equiv \frac{2a}{\lambda /2}.
+\label{ach}
+\end{equation}
+
+\noindent As we can see from the scheme and equation (\ref{ach}), for a given amplitude, shorter waves are steeper than longer waves. We can then estimate a ``bulk'' $\alpha_{ch}$ from the integral wave parameters by assuming $H_s \sim 2a$ and taking the wavelength ($\lambda$) to be the wavelength at the peak frequency ($\lambda_p$):
+
+\begin{equation}
+\alpha_{ch} \sim \tan^{-1}\left( \frac{H_s}{\lambda_p /2}\right), 
+\end{equation}
+\noindent where
+\begin{equation}
+\lambda_p = \frac{g}{2\pi f^2_p}.
+\end{equation}
+
+
+Figure \ref{slope} shows monthly average maps of the bulk $\alpha_{ch}$ computed from the WW3 hindcast. Note that both the spatial and temporal variability patterns of the average bulk $\alpha_{ch}$ closely match those for the average wind speed (Figure \ref{wind_maps}). We see that expansion fan winds in spring and summer lead to short-period and relatively high wave heights which, unsurprisingly, translate into higher bulk wave slopes. The look angle of SWOT in the near and far range will be approximately $4^\circ$ and $1^\circ$, which is comparable to $\alpha_{ch}$. Therefore, especially for the shallower look angle, locally generated wind-waves in spring and summer may increase layover effects, impacting the SSH retrieval.
+ 
+\cite{schwendeman2015observations} have shown that the variance of the surface slope, or the mean square slope (mss), which includes contributions from high-wavenumber surface roughness, correlates better with the wind forcing and whitecap coverage in comparison to the bulk wave slope. We have computed monthly averages of the mss from the WW3 hindcast and have found the correlation between the monthly bulk wave slope (Figure \ref{slope}) and the monthly mss to vary between 0.79 and 0.93 (not shown).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{../figs/pdf/slope_degrees.pdf}
+\caption{Monthly maps of average characteristic wave slope, computed using the significant wave height and 
+peak period from the WW3 hindcast}
+\label{slope}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{table*}
+%\caption{}
+%\centering
+%\begin{tabular}{l| c c c c c c c c c c c c}
+%\hline
+%Hs & Jan & Feb & Mar & Apr & May & Jun & Jul & Aug & Sep & Oct & Nov & Dec\\
+%\hline
+%\hline
+%2 m & 85.9 & 89.4 & 75.8 & 72.0 & 45.7 & 45.2 & 47.0 & 25.2 & 42.9 & 70.9 & 82.1 &  89.9 \\
+%2.5 m & 68.0 & 69.0 & 58.1 & 47.2 & 22.0 & 24.4 & 21.2 & 9.6 & 21.0 & 37.0 & 64.2 & 72.9 \\
+%3 m & 50.8 & 51.3 & 42.7 & 24.8 & 11.0 & 8.1 & 4.5 & 2.6 & 11.8 & 18.9 & 46.3 & 55.0 \\ 
+%4 m & 22.7 & 22.1 & 18.5 & 3.2 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 6.3 & 13.0 & 28.7 \\
+%5 m & 5.5 & 8.8 & 6.5 & 1.6 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 4.9 & 10.9 \\
+%6 m & 3.1 & 1.8 & 0.8 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 2.4 & 6.2 \\
+%\hline
+%\end{tabular}
+%\label{stations}
+%\end{table*}
+
+\section{Summary and Conclusions}
+% storm track 2--4 days
+% at the beginning of spring the NPH strengthens and its center moves towards north
+% southwestward in the spring to southward in the summer
+% days to weeks interrupted by calm periods 1--6 days
+% broken up by intermitent calm periods (Taylor)
+
+A series of capes along the California coast together with the regional-scale coastline configuration allow a succession of ``expansion fan'' winds to occur. These winds appear as anomalously high (7--10 m/s) alongshore winds in central/northern California from April to July that extend 300--500 km offshore between
+$33^\circ$ and $42^\circ$N\@. South of Point Conception, the wind speed peaks earlier in the spring, when wind directions become predominantly westerly (onshore). From analyzing significant wave height, peak period, and peak direction we have shown that expansion fans play a crucial role in determining the intra-annual variability of the surface wave field in the California Current region. As a result, most high waves during spring/summer in central/northern California have relatively short-period ($T\leq 10$ s) and come from the northwest.   
+By combining data from altimeter, wave buoy, and wave model hindcast, we were able to quantify both the spatial and temporal characteristics of the wave field and also build a thorough surface wave climatology.  
+
+The signature of the expansion fan winds projects onto monthly maps of $H_s$ as a localized region of $H_s \geq2$ m that is very well defined in June. The same spatial pattern appears on monthly maps of peak period and peak direction. Partitioning of the directional spectra from the CDIP wave buoys has confirmed the importance of local wind forcing to the significant wave height. Our findings show that the band of waves from directions between 270$^\circ$ and 360$^\circ$ and periods between 5 s and 10 s give the largest contribution to the total $H_s$ between April and October at nearly all buoys.
+
+The effects of surface waves on altimeter measurements are intrinsically dependent on the statistics of the sea state. Theoretical formulations of the sea state bias (SSB) rely on the fact that the distribution of wave heights is nearly Gaussian; however, the distribution of wave heights for locally-generated wind waves is fairly skewed \citep[e.g.]{fu1991effect,glazman1990effects}. We have found that during spring/summer, the wave field off the California coast is dominated by local wind-sea ($c_p/U_{10} \leq 1.2$) up to 50\% of the time, which implies that the interpretation of the sea state bias might have to be revisited. It is also noteworthy that satellite altimetry is currently the only way to constantly monitor significant wave height at global scales. Given that the wave field is highly variable in both space and time, accurate regional-scale climatologies are key to continue improving satellite-based wave products.
+Finally, we have discussed the potential implications of the seasonal variability of the surface wave field to the calibration and validation efforts for the SWOT mission. Based on our results, significant wave height at the potential calval site has the highest probability ($\sim$70\%) of being below the specified threshold for the projected SWOT performance in August, which would be the optimum time regarding $H_s$ for calval to minimize surface-wave-induced error. However, we have also shown that expansion fan winds cause the characteristic wave slope at the calval site to be the highest during late spring and summer, which might increase layover effects. Therefore, the contribution of surface waves to SWOT's error budget will be a trade off between smaller errors due to $H_s$ in spring and summer, but higher errors associated with layover effects due to the wave steepness. As satellite altimeters evolve to resolve finer scales, knowing the wave field with precision may help the interpretation of sea surface height measurements at high wavenumbers and frequencies. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  ACKNOWLEDGMENTS
+
+\acknowledgments
+This work was supported by the SWOT program with NASA grant 
+NNX16AH67G and 80NSSC17K0326. BDC was partially funded by the ONR grant  N000141512285.
+The authors thank the two anonimous reviewers for their comments and
+suggestions.The authors ackowledge the \textit{Coastal Data Information Program} (CDIP)
+for providing the buoy data available from \url{http://thredds.cdip.ucsd.edu} 
+and the \textit{French Research Institute for Exploitation of the Sea}
+(IFREMER) for providing the WaveWatch III hindcast (ftp://ftp.ifremer.fr/ifremer/ww3/HINDCAST) 
+and the altimeter surface wave database
+(\url{ftp://ftp.ifremer.fr/ifremer/cersat/products/swath/altimeters/waves}).  
+ABVB is grateful to Reuben Demirdjian and Sean Crosby for fruitful 
+discussions. 
+
+\clearpage
+\bibliographystyle{agufull08}
+\bibliography{CaliforniaWaveClimate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Track Changes:
+% To add words, \added{<word added>}
+% To delete words, \deleted{<word deleted>}
+% To replace words, \replace{<word to be replaced>}{<replacement word>}
+
+% At the end of the document, use \listofchanges, which will list the
+% changes and the page and line number where the change was made.
+
+% When final version, \listofchanges will not produce anything,
+% \added{} word will be printed, \deleted{} will take away the word,
+% \replaced{}{} will print only the 2nd argument.
+
+%%%
+\listofchanges
+%%%
+
+\end{document}
+
