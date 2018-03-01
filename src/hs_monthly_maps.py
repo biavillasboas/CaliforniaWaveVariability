@@ -8,7 +8,7 @@ from scipy.ndimage.filters import gaussian_filter
 
 
 # ETOPO file
-tfile = '/Users/bia/work/data/etopo/ETOPO2v2c_f4.nc'
+tfile = '../data/etopo/ETOPO2v2c_f4.nc'
 
 # Path to binned altimetry data
 path = '../data/eastern_pacific_all_sat_binned_swh_1994-08-23_2012-08-23.nc' 
