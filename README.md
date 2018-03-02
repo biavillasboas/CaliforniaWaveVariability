@@ -5,6 +5,23 @@ Surface waves are crucial for the dynamics of the upper ocean not only because t
 * [Sarah T. Gille](http://www-pord.ucsd.edu/~sgille/)
 * [Matthew R. Mazloff](http://scrippsscholars.ucsd.edu/mmazloff)
 * [Bruce D. Cornuelle](http://scrippsscholars.ucsd.edu/bcornuelle)
+# Data
+This project used three major datasets: Altimetry-based significant wave height, wave-buoy measurements, and 
+output from a wave model hindcast. 
+
+Altimetry Data 
+-----------
+The altimetry-based data consists of homogeneously validated and calibrated along-track measurements of significant wave height from nine different altimetry missions distributed by the Institut français de recherche pour l'exploitation de la mer (IFREMER). The along-track measurements were daily averaged into 1 degree by 1 degree bins using the code [bin_all_sat.py](https://github.com/biavillas/CaliforniaWaveVariability/blob/master/data/bin_all_sat.py). The original along-track data is available from the IFREMER ftp server <ftp://ftp.ifremer.fr/ifremer/cersat/products/swath/altimeters/waves/data>
+
+Buoy Data 
+-----------
+Wave-buoy data for this paper was provided by the Coastal Data Information Program [CDIP](http://cdip.ucsd.edu),
+ which is available in their thredds server <http://thredds.cdip.ucsd.edu/thredds/catalog.html>. In particular, we analyzed stations 168, 094, 029, 157, 071, 167, and 191.
+
+WaveWatch III hindcast
+-----------
+The wave model hindcast used in this paper is based on the WaveWatch III framework forced by reanalisys winds from the European Centre for Medium-Range Weather Forecasts and it was produced by IFREMER. The full wave hindcast is available for download at <ftp://ftp.ifremer.fr/ifremer/ww3/HINDCAST/GLOBAL>.
+
 
 # Funding
 This project was partlially funded by the SWOT program with NASA grant NNX16AH67G.
