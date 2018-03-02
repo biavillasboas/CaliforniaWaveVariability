@@ -19,7 +19,7 @@ Wave-buoy data for this paper was provided by the Coastal Data Information Progr
 
 WaveWatch III hindcast
 -----------
-The wave model hindcast used in this paper is based on the WaveWatch III framework forced by reanalisys winds from the European Centre for Medium-Range Weather Forecasts (ECMWF) and it was produced by IFREMER. The full wave hindcast is available for download at <ftp://ftp.ifremer.fr/ifremer/ww3/HINDCAST/GLOBAL>.
+The wave model hindcast used in this paper is based on the WaveWatch III framework forced by reanalisys winds from the Climate Forecast System Reanalysis (CFSR) and it was produced by IFREMER. The full wave hindcast is available for download at <ftp://ftp.ifremer.fr/ifremer/ww3/HINDCAST/GLOBAL>.
 
 
 # Funding
