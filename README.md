@@ -15,7 +15,7 @@ The altimetry data consists of homogeneously validated and calibrated along-trac
 
 Buoy Data 
 -----------
-Wave-buoy data for this paper were provided by the Coastal Data Information Program [CDIP](http://cdip.ucsd.edu) and is available from their thredds server <http://thredds.cdip.ucsd.edu/thredds/catalog.html>. In particular, we analyzed stations 168, 094, 029, 157, 071, 167, and 191.
+Wave-buoy data for this paper were provided by the Coastal Data Information Program [CDIP](http://cdip.ucsd.edu) and are available from their thredds server <http://thredds.cdip.ucsd.edu/thredds/catalog.html>. In particular, we analyzed stations 168, 094, 029, 157, 071, 167, and 191.
 
 WaveWatch III hindcast
 -----------
