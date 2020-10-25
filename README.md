@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4127333.svg)](https://doi.org/10.5281/zenodo.4127333)
+
 # Source code for
 Villas Bôas, A. B., Gille, S. T., Mazloff, M. R., & Cornuelle, B. D. (2017). Characterization of the deep water surface wave variability in the California Current region. Journal of Geophysical Research: Oceans, 122(11), 8753-8769., doi: https://doi.org/10.1002/2017JC013280
 
@@ -29,3 +31,9 @@ The wave model hindcast used in this paper is based on the WaveWatch III framewo
 This project was partlially funded by the SWOT program with NASA grant NNX16AH67G.
 Bia Villas Boas was partially funded by NASA grant 80NSSC17K0326.
 Bruce Cornuelle was partially funded by the ONR grant N000141512285.
+
+# How to cite this code
+
+If you wish to use the code from this repository, you may cite it as
+
+Villas Bôas, Ana B. (2020, October 25). Source code for: 'Characterization of the Deep Water Surface Wave Variability in the California Current Region' (Version v1.0). Zenodo. https://doi.org/10.5281/zenodo.4127332
